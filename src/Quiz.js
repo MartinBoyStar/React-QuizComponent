@@ -5,22 +5,21 @@ let quizData = require('./quiz_data.json')
 
 
 
-class Quiz extends React.Component {
+class Quiz extends Component {
     constructor(props) {
         super(props);
-        this.state = { quiz_position: 1 };
+        this.state = { quiz_position: 1 }
     }
     render() {
-        return /*<div>Quiz</div>;*/
-        <div>
-            <div className="QuizQuestion"> {quizData.quiz_questions[0].instruction_text}
-                //Passing the data from this position!!
-            </div>
-        </div>
+        return (
+            <div><div className="QuizQuestion"> {quizData.quiz_questions[0]
+                .instruction_text}     </div></div>
+        )
     }
 }
 export default Quiz
 
+//Passing the data from this position!!
 //9.Inside of that div with a className of QuizQuestion, access the first element in the quiz_questions property of the quizData object,
 //and display the instruction_text value.
 
