@@ -9,5 +9,6 @@ class App extends Component {
     )
   }
 }
-
+//Render returnerar html!!
+//Vart exporteras detta?
 export default App
