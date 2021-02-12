@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+//Varför måste vi importera React i varje fil?
 class QuizQuestionButton extends Component {
     handleClick() {
         this.props.clickHandler(this.props.button_text)
@@ -12,5 +12,5 @@ class QuizQuestionButton extends Component {
         )
     }
 }
-
+//Ok, denna exporten sker till QuizQuestion. Verkar normalt!
 export default QuizQuestionButton
